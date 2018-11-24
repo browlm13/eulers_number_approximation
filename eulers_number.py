@@ -67,7 +67,7 @@ def eulers(t):
 def eulers2(t):
 	""" 
 		requires t slots in memory to store 1/i! values in addition to storing i and t
-		fast t divisions, t additions - 2t arithmetic operations
+		t divisions, t +1 additions - 2t +1 arithmetic operations
 		Big O of t
 	"""
 	v = np.empty(shape=(t+1,))
