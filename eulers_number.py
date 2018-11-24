@@ -94,7 +94,7 @@ if __name__ == "__main__":
 
 	# higher precision
 
-	t = 462
+	t = 462 # 1387 total arithmetic operations, 1034 d.p.a
 	prec = 1034
 	e_hat = eulers_precise(t,prec)
 	getcontext().prec = prec
