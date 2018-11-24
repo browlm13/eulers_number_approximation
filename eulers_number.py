@@ -54,6 +54,7 @@ def an(n):
 
 def eulers(t):
 	""" 
+		easy on memory - t, i, v, at (numbers) only variables stored
 		2t multiplications, t additions, 1 division - 3t + 1 arithmetic operations
 		Big O of t
 	"""
@@ -62,6 +63,18 @@ def eulers(t):
 		at = i * at + 1
 		v *= i
 	return at/v
+
+def eulers2(t):
+	""" 
+		requires t slots in memory to store 1/i! values in addition to storing i and t
+		fast t divisions, t additions - 2t arithmetic operations
+		Big O of t
+	"""
+	v = np.empty(shape=(t+1,))
+	v[0] = 1
+	for i in range(1, t+1):
+		v[i] = v[i-1]/i
+	return sum(v)
 
 def eulers_precise(t, prec=100):
 	getcontext().prec = prec
