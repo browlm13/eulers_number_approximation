@@ -17,6 +17,10 @@
 			e = p_{t}
 
 		a_{t} = (1 + t)((1 + t - 1)(...((1 + 1)*1 + 1)...) + 1) + 1
+		
+		a_{t}'s are a member of this sequence:
+		
+			http://oeis.org/A002627
 	
 """
 
