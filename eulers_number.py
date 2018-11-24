@@ -17,15 +17,25 @@
 			e = p_{t}
 
 		a_{t} = (1 + t)((1 + t - 1)(...((1 + 1)*1 + 1)...) + 1) + 1
-		
-		a_{t}'s are a member of this sequence:
-		
+
+	
+	a_{t}'s are a members of this sequence:
+			
+			a(n) = n*a(n-1) + 1, a(0) = 0. 
+
 			http://oeis.org/A002627
 	
 """
 
 __author__  = "LJ Brown"
 __file__ = "eulers_number.py"
+
+def an(n):
+	""" a(n) = n*a(n-1) + 1, a(0) = 0 """
+	an = 0
+	for i in range(1,n):
+		an = i*an + 1
+	return an
 
 def eulers(t):
 	""" 
