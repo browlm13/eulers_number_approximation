@@ -59,9 +59,8 @@ def eulers(t):
 	"""
 	v, at = 1.0, 1.0
 	for i in range(1,t+1):
-		vi = i
-		at = vi * at + 1
-		v *= vi
+		at = i * at + 1
+		v *= i
 	return at/v
 
 def eulers_precise(t, prec=100):
