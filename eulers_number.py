@@ -65,7 +65,7 @@ if __name__ == "__main__":
 	# Mathmatica
 	e_true = 2.718281828459045
 
-	t = 17 # 52 total arithmetic operations, 
+	t = 17 # 52 total arithmetic operations, 16 d.p.a
 	e_hat = eulers(t)
 	error = abs(e_hat - e_true)
 
