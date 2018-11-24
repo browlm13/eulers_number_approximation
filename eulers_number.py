@@ -57,6 +57,9 @@ def eulers(t):
 		easy on memory - t, i, v, at (numbers) only variables stored
 		2t multiplications, t additions, 1 division - 3t + 1 arithmetic operations
 		Big O of t
+
+		memory: 4 const
+		operations: 3t + 1 (not including counter)
 	"""
 	v, at = 1.0, 1.0
 	for i in range(1,t+1):
@@ -67,8 +70,11 @@ def eulers(t):
 def eulers2(t):
 	""" 
 		requires t slots in memory to store 1/i! values in addition to storing i and t
-		t divisions, t +1 additions - 2t +1 arithmetic operations
+		fast t divisions, t additions - 2t arithmetic operations
 		Big O of t
+
+		memory: t + 2 (not including array pointers)
+		operations: 2t + 1 (not including counter)
 	"""
 	v = np.empty(shape=(t+1,))
 	v[0] = 1
