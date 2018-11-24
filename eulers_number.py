@@ -6,6 +6,10 @@
 	combining t terms in the series expansion of e for efficient evaluation,
 	
 		e = 1/0! + 1/1! + 1/2! + ...
+
+		e ~= [t(t-1(...4(3(2(1(0) +1)+1)+1)+1...)+1) +1]/t!
+
+		compute t! while evaluating the nested seiers
 	
 	computing approximation for e,
 	
@@ -24,6 +28,8 @@
 			a(n) = n*a(n-1) + 1, a(0) = 0. 
 
 			http://oeis.org/A002627
+
+
 	
 """
 
